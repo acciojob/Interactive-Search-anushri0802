@@ -1,6 +1,8 @@
-document.getElementById('search-icon').addEventListener('click', function() {
-            const searchContainer = document.getElementById('search-container');
-            const searchInput = document.getElementById('search-input');
-            searchContainer.classList.add('active');
-            searchInput.focus();
+const search = document.querySelector('.search');
+        const input = document.querySelector('.input');
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', () => {
+            search.classList.toggle('active'); // Toggle active class
+            input.focus(); // Focus on the input field
         });
